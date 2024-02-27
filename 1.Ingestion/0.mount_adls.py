@@ -32,18 +32,18 @@ def mount_adls(storage_account_name, container_name):
 
 # COMMAND ----------
 
-# Mount the raw container
-mount_adls("project2024formula1dl", "raw")
+# Mount the raw-data container
+mount_adls("project2024formula1dl", "raw-data")
 
 # COMMAND ----------
 
-#Mount the processed container
-mount_adls("project2024formula1dl", "processed")
+#Mount the processed-data container
+mount_adls("project2024formula1dl", "processed-data")
 
 # COMMAND ----------
 
-# Mount the presentation container
-mount_adls("project2024formula1dl", "presentation")
+# Mount the presentation-data container
+mount_adls("project2024formula1dl", "presentation-data")
 
 # COMMAND ----------
 
