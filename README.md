@@ -1,20 +1,16 @@
 # Formula1-Azure-Databricks-Project
-<p> Summary: Analyze Formala1 race data...<p>
+<p> Analyze Formula1 race data using Azure Databricks and create dashboards to show the trend of dominant drivers and teams since 1950.<p>
   
 ### Language:
 - Python
 - SQL
 
-
 ### Tools:
 - Azure Databricks
 - Azure Data Lake Storage(ADLS)
-- Azure Data Factory
-- Microsoft PowerBI
 
-### Project Details
-#### Step 1: Data Ingestion
-Data Source: [Ergast API](https://ergast.com/downloads/f1db_csv.zip)
+### Data Source: [Ergast API](https://ergast.com/mrd/db/#csv)
+- Entity Relationship Diagram
+![Entity Relationship Diagram](https://ergast.com/images/ergast_db.png)
 
-The raw csv data files are uploaded to ADLS and then saved as parquet file after cleaning.
 
