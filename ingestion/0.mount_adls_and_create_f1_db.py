@@ -32,18 +32,21 @@ def mount_adls(storage_account_name, container_name):
 
 # COMMAND ----------
 
-# Mount the raw-data container
 mount_adls("project2024formula1dl", "raw-data")
 
 # COMMAND ----------
 
-#Mount the processed-data container
-mount_adls("project2024formula1dl", "processed-data")
+mount_adls("project2024formula1dl", "f1-db")
 
 # COMMAND ----------
 
-# Mount the presentation-data container
-mount_adls("project2024formula1dl", "presentation-data")
+mount_adls("project2024formula1dl", "f1-presentation")
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC CREATE DATABASE IF NOT EXISTS f1_db
+# MAGIC LOCATION "/mnt/project2024formula1dl/f1-db"
 
 # COMMAND ----------
 
